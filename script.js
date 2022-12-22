@@ -28,6 +28,15 @@
     res.innerHTML = `${tabuada} X ${tabuadaAte} = ${tabuada * tabuadaAte}`
   }
 
-  btnGerar.addEventListener('click', Geradora)
+  //bnt---------
+btnGerar.addEventListener('click', Geradora)
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    Geradora()
+  }
+});
+//-----------
+  
   Geradora()
 })()
