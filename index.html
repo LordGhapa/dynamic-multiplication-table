@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada Dinâmica</title>
+  </head>
+  <style>
+  *{
+      list-style: none;
+      box-sizing: border-box;
+      
+    }
+    ul{
+      padding: 0;
+    }
+    #tabela {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 2%;
+    }
+    
+  </style>
+  <body>
+    <h1>Tabuada Dinâmica</h1>
+
+    <form action="">
+    <p><label> De 1 ate qual N°: <input  type="number" name="" id="n1" min="1" ></label> </p>
+    <p><label>Multiplicado ate por N°: <input type="number" name="" id="n2" min="1" ></label> </p>
+    <p id="res"></p>
+    <input id="gerar" type="button" value="Gerar">
+    <input  type="reset" value="Limpar">
+    </form>
+    
+    <div id="tabela">
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
