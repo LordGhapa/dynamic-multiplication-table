@@ -9,10 +9,8 @@
   let tabuadaAte;
 
   function Geradora() {
-    Carregando()//telaa de carregamento como coloca ???????????
-
-    tabuada = inputN1.value == '' || inputN1.value > 250 ? 10 : inputN1.value
-    tabuadaAte = inputN2.value == '' || inputN2.value > 250 ? 10 : inputN2.value
+    tabuada = inputN1.value == '' || inputN1.value > 250||inputN1.value <0 ? 10 : inputN1.value
+    tabuadaAte = inputN2.value == '' || inputN2.value > 250||inputN1.value <0 ? 10 : inputN2.value
     tabela.innerHTML = ' '
 
     for (let i = 1; i <= tabuada; i++) {
@@ -31,10 +29,5 @@
   }
 
   btnGerar.addEventListener('click', Geradora)
-
-  function Carregando() {
-   
-    res.innerHTML = 'Carregando'
-  }
   Geradora()
 })()
